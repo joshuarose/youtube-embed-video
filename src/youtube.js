@@ -30,7 +30,7 @@ function YoutubeEmbedVideo(props) {
     { width, height } = getVideoSize(props.width, props.height, props.size);
 
   return (
-    <iframe width={width} height={height} src={url} frameBorder="0" allowFullScreen={true}></iframe>
+    <iframe width={width} height={height} src={url} frameBorder="0" allowFullScreen={true} onClick={() => props.onPlay()}></iframe>
   );
 }
 
